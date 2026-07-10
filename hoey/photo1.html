@@ -1,289 +1,136 @@
-<html>
-<HEAD>
-<META content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
-<META content="0" http-equiv="Expires">
-<META content="1.0" name="TRELLIX_BUILDER_VER"><META name="TRELLIX_OPEN_SITE_COMMAND" content="http://build.tripod.com:80/servlet/SiteBuilderServlet?fUrl=/trellix/sitebuilder/f_error.html&sUrl=/trellix/sitebuilder/f_edit_page.html&Command=OpenSite&FileName=2363857408183322990/site.xml"></META><base href="http://thoey.tripod.com/hoey/index.html">
-<script language="Javascript">
-document.isTrellix = 1;
-<!-- STEP ONE: Paste this code into the HEAD of your HTML document  -->
-<SCRIPT LANGUAGE="JavaScript">
-<!-- Original:  Ricocheting (ricocheting@hotmail.com) -->
-<!-- Web Site:  http://www.ricocheting.com -->
-<!-- This script and many more are available free online at -->
-<!-- The JavaScript Source!! http://javascript.internet.com -->
-<!-- Begin
-var rotate_delay = 5000; // delay in milliseconds (5000 = 5 secs)
-current = 0;
-function next() {
-if (document.slideform.slide[current+1]) {
-document.images.show.src = document.slideform.slide[current+1].value;
-document.slideform.slide.selectedIndex = ++current;
-   }
-else first();
-}
-function previous() {
-if (current-1 >= 0) {
-document.images.show.src = document.slideform.slide[current-1].value;
-document.slideform.slide.selectedIndex = --current;
-   }
-else last();
-}
-function first() {
-current = 0;
-document.images.show.src = document.slideform.slide[0].value;
-document.slideform.slide.selectedIndex = 0;
-}
-function last() {
-current = document.slideform.slide.length-1;
-document.images.show.src = document.slideform.slide[current].value;
-document.slideform.slide.selectedIndex = current;
-}
-function ap(text) {
-document.slideform.slidebutton.value = (text == "Stop") ? "Start" : "Stop";
-rotate();
-}
-function change() {
-current = document.slideform.slide.selectedIndex;
-document.images.show.src = document.slideform.slide[current].value;
-}
-function rotate() {
-if (document.slideform.slidebutton.value == "Stop") {
-current = (current == document.slideform.slide.length-1) ? 0 : current+1;
-document.images.show.src = document.slideform.slide[current].value;
-document.slideform.slide.selectedIndex = current;
-window.setTimeout("rotate()", rotate_delay);
-   }
-}
-//  End -->
-</script>
-<title>Photo Album</title>
-<link REL=stylesheet TYPE="text/css" HREF="http://thoey.tripod.com/hoey/hoey.css">
-</HEAD>
-<body alink="#333399" vlink="#333399" link="#333399" bgcolor="#cccc99">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album - The Hoey Family Genealogy</title>
+    <style>
+        /* Styles from index.htm */
+        body { font-family: 'Times New Roman', Times, serif; line-height: 1.6; margin: 0; color: #000000; }
+        header { background: #355E3B; color: #fff; padding: 1rem; text-align: center; }
+        nav { background: #cccc99; padding: 5px; border-bottom: 2px solid #355E3B; position: sticky; top: 0; z-index: 1000; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        nav a { text-decoration: none; color: #355E3B; font-weight: bold; white-space: nowrap; }
+        nav a:hover { text-decoration: underline; color: #000; }
+        main { max-width: 900px; margin: 20px auto; padding: 0 20px; }
+        footer { background: #333; color: #fff; text-align: center; padding: 10px; margin-top: 30px; }
 
-<table border="0" cellspacing="0" cellpadding="0">
-	<tr valign="top">
-		<td width="70"><a href="http://thoey.tripod.com"><img alt="Home" width="70" height="63" src="/hoey/bluecorner_corner2.gif" border="0"></a></td>
-		<td width="9"><img alt="" width="9" height="63" src="/imagelib/sitebuilder/layout/spacer.gif"></td>
-		<td width=100%><img alt="" width=100% height="49" src="/imagelib/sitebuilder/layout/bluecorner_top.gif"></td>
-	</tr>
-</table>
+        /* Modern Gallery Styles */
+        .gallery-container { display: flex; flex-direction: column; align-items: center; gap: 15px; background: #f4f4f4; padding: 20px; border: 2px solid #355E3B; border-radius: 8px; max-width: 600px; margin: 0 auto; }
+        .gallery-image { max-width: 100%; height: auto; border: 2px solid #355E3B; }
+        .controls { display: flex; gap: 10px; justify-content: center; }
+        button, select { padding: 8px 12px; cursor: pointer; }
+		
+        /* Main Content - Full Width */
+        main { max-width: 900px; margin: 20px auto; padding: 0 20px; }
+        main h2 { color: #355E3B; border-bottom: 2px solid #355E3B; padding-bottom: 10px; }
+        main a { color: #355E3B; font-weight: bold;  text-decoration: none; }
+        main a:hover { text-decoration: underline; }
+		
+    </style>
+</head>
+<body>
 
-<table border="0" cellspacing="0" cellpadding="0">
-	<tr valign="top">
-		<td width=100%><img alt="" width=100% height="6" src="/imagelib/sitebuilder/layout/spacer.gif"></td>
-	</tr>
-</table>
+    <header>
+        <h1>The Hoey Family Genealogy</h1>
+    </header>
 
-<table width=100% border="0" cellspacing="0" cellpadding="0">
-	<tr valign="top">
-		<td background="/imagelib/sitebuilder/layout/bluecorner_leftback.gif" width="49"><img alt="" width="49" height="123" src="/imagelib/sitebuilder/layout/bluecorner_lefttop.gif"></td>
-		<td width="30"><img alt="" width="9" height="63" src="/imagelib/sitebuilder/layout/spacer.gif"></td>
-		<td width=100%>
-			<table width=100% border="0" cellspacing="0" cellpadding="0">
-				<tr>
-					<td><img alt="" width=100% height="3" src="/imagelib/sitebuilder/layout/spacer.gif"></td>
-				</tr>
-				<tr>
-					<td width=100% align=center><font face="Times, Times New Roman" size="7" color="#333399"><i>Photo Album</i></font></td>
-				</tr>
-				<tr>
-					<td><img alt="" width=100% height="5" src="/imagelib/sitebuilder/layout/spacer.gif"></td>
-				</tr>
-				<tr>
-					<td>
-						<table width=100% border="0" cellspacing="0" cellpadding="0">
-							<tr>
-								<td bgcolor="333399" width=100% height="50">
-								<!--START HTML NAVIGATION BAR TABLE--> 
-								<div align=center><center> 
-									<table width=75% align=center height=5 bgcolor="cccc99" cellpadding=1 border=0 cellspacing=0> 
-										<tr> 
-											<td align=center > 
-												<p>
-												<a href="http://thoey.tripod.com/hoey/irish/index.htm">Irish Roots</a> 
-											</td> 
-											<td align=center > 
-												<a href="http://thoey.tripod.com/hoey/metz/index.htm">Metzenseifen Roots</a> 
-											</td> 
-											<td align=center > 
-												<a href="http://thoey.tripod.com/hoey/italy/index.htm">Italian Roots</a> 
-											</td> 
-											<td align=center > 
-												<a href="http://thoey.tripod.com/hoey/mckees/index.htm">German Roots</a> 
-											</td> 
-											<td align=center > 
-												<a href="http://thoey.tripod.com/hoey/mystery1.html">Mysteries</a> 
-											</td> 
-											<td align=center > 
-												<a href="http://thoey.tripod.com/hoey/story1.html">Stories and Other Stuff</a> 
-											</td> 
-										</tr> 
-									</table> 
-								</center></div> 
-								<!--END HTML NAVIGATION BAR TABLE--> 
-								<!--START HTML NAVIGATION BAR TABLE--> 
-								<div align=center><center> 
-									<table width=75% height=5 bgcolor="cccc99" cellpadding=1 border=0 cellspacing=0> 
-										<tr> 
-											<td align=center > 
-												<a href="http://thoey.tripod.com/hoey/photo1.html">Photo Album</a> 
-											</td> 
-											<td align=center > 
-												<a href="http://thoey.tripod.com/hoey/contact.html">Contact Me</a> 
-											</td> 
-											<td align=center > 
-												<a href="http://thoey.tripod.com/hoey/links.html">Links</a>  
-											</td> 
-											<td align=center > 
-												<a href="http://thoey.tripod.com/hoey/whatsnew.html">What's New</a>  
-											</td> 
-											<td align=center > 
-												<a href="http://thoey.tripod.com/hoey/acknowledgements.html">Acknowledgements</a> 
-											</td> 
-											<td align=center > 
-												<a href="http://thoey.tripod.com/hoey/sitemap.html">Site Map</a> 
-											</td> 
-											<td align=center > 
-												<a href="http://freefind.com/servlet/freefind?id=2288115">Site Search</a> 
-											</td> 
-										</tr> 
-									</table> 
-								</center></div> 
-								<!--END HTML NAVIGATION BAR TABLE--> 
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
-			<table width=100% border="0" cellspacing="0" cellpadding="0">
-				<tr valign="top">
-					<td bgcolor="#cccc99"><img alt="" height="6" src="/imagelib/sitebuilder/layout/spacer.gif">
-						<table border="0" cellspacing="0" cellpadding="5">
-							<tr>
-								<td><img alt="" width=100% height="6" src="/imagelib/sitebuilder/layout/spacer.gif"></td>
-							</tr>
-							<tr valign="top">
-								<td>
-									<table width=100% border="0" cellspacing="0" cellpadding="0">
-										<tr>
-											<td colspan="2">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/irish/index.htm">Irish Roots</a></li>
+            <li><a href="/metz/index.htm">Metzenseifen Roots</a></li>
+            <li><a href="/italy/index.htm">Italian Roots</a></li>
+            <li><a href="/mckees/index.htm">German Roots</a></li>
+            <li><a href="hoey/mystery1.html">Mysteries</a></li>
+            <li><a href="hoey/story1.html">Stories and Other Stuff</a></li>
+            <li><a href="hoey/photo1.html">Photo Album</a></li>
+            <li><a href="hoey/contact.html">Contact</a></li>
+            <li><a href="hoey/whatsnew.html">What's New</a></li>
+            <li><a href="hoey/acknowledgements.html">Acknowledgements</a></li>
+            <li><a href="hoey/sitemap.html">Site Map</a></li>
+            <li><a href="http://freefind.com/servlet/freefind?id=2288115">Site Search</a></li>
+        </ul>
+    </nav>
 
-    <!-- STEP TWO: Copy this code into the BODY of your HTML document  -->
-<center>
-<form name=slideform>
-<table cellspacing=1 cellpadding=4 bgcolor="#000000">
-<tr>
-<td align=center bgcolor="white">
-<b><font face="Times, Times New Roman" size="3" color="#333399">The Hoey Family Genealogy Site</b><br><font size="1">New pictures have an asterisk</b>
-</td>
-</tr>
-<tr>
-<td align=center bgcolor="white" width=100% height=150>
-<img src="http://thoey.tripod.com/hoey/photos/tom_and_lisa.jpg" name="show">
-</td>
-</tr>
-<tr>
-<td align=center bgcolor="#C0C0C0">
-<select name="slide" onChange="change();">
-<option value="http://thoey.tripod.com/hoey/photos/tom_and_lisa.jpg">Me and my wife, Lisa - 1990
-<option value="http://thoey.tripod.com/hoey/blank.gif">*** IRISH ROOTS ***
-<option value="http://thoey.tripod.com/hoey/photos/china_1.jpg">James Hoey in China, 1901
-<option value="http://thoey.tripod.com/hoey/photos/hoey_family_2.jpg">Rose (Quinn) Hoey and Family, ca. 1905
-<option value="http://thoey.tripod.com/hoey/photos/james_police.jpg">James in his police uniform, ca 1906
-<option value="http://thoey.tripod.com/hoey/photos/mary_donahue.jpg">Mary Donahue, ca. 1910
-<option value="http://thoey.tripod.com/hoey/photos/james_and_mary.jpg">James and Mary Hoey, ca. 1915
-<option value="http://thoey.tripod.com/hoey/photos/hoey_family_3.jpg">My father with his sisters, 1934
-<option value="http://thoey.tripod.com/hoey/photos/donahue_family.jpg">Mary (L) and Ann Donahue with their parents, ca. 1938
-<option value="http://thoey.tripod.com/hoey/photos/county_police.jpg">James being sworn in as Superintendent of County Police
-<option value="http://thoey.tripod.com/hoey/photos/james_hoey_1.jpg">James Hoey, date unknown
-<option value="http://thoey.tripod.com/hoey/photos/hoey_family_1.jpg">Hoey Family, ca. 1938
-<option value="http://thoey.tripod.com/hoey/photos/medal.jpg">China Relief Expedition Medal
-<option value="http://thoey.tripod.com/hoey/photos/hoey_wedding.jpg">My mother and father on their wedding day, 1956
-<option value="http://thoey.tripod.com/hoey/blank.gif">*** METZENSEIFEN ROOTS ***
-<option value="http://thoey.tripod.com/hoey/photos/maka_1.jpg">Jewell Stark, 1907
-<option value="http://thoey.tripod.com/hoey/photos/louis_and_pauline.jpg">Louis and Pauline (Stark) Weet, late 1920's
-<option value="http://thoey.tripod.com/hoey/photos/maka6.jpg">Jewell Stark, 1930.
-<option value="http://thoey.tripod.com/hoey/photos/maka_and_herbert_1.jpg">Herbert and Jewell Weet on their wedding day, 1931
-<option value="http://thoey.tripod.com/hoey/photos/weet_children.jpg">My mother (front) with her brothers and sisters, 1941
-<option value="http://thoey.tripod.com/hoey/photos/weet_house.jpg">Herbert and Jewell Weet home in Brookline
-<option value="http://thoey.tripod.com/hoey/photos/kund_family.jpg">The Family of Wendelin Kund and Agnes Gedeon Kund, 1920.
-<option value="http://thoey.tripod.com/hoey/photos/orient2.jpg">John and Catherine (Weet) Orient on their wedding day.
-<option value="http://thoey.tripod.com/hoey/photos/pickle_plant.jpg">The Weet Pickle Company on McNeilly Road in Baldwin Township.
-<option value="http://thoey.tripod.com/hoey/photos/orient.jpg">The Orient Children, 1937
-<option value="http://thoey.tripod.com/hoey/photos/reunion.jpg">Weet/Orient Family Reunion, 1981
-<option value="http://thoey.tripod.com/hoey/photos/gedeon_family.jpg">John and Mary (Stark) Gedeon with their sons, ca. 1900
-<option value="http://thoey.tripod.com/hoey/photos/eiben_family.jpg">One branch of the Eiben Family, ca. 1912
-<option value="http://thoey.tripod.com/hoey/photos/kramer.jpg">The Kramer Family, ca. 1910
-<option value="http://thoey.tripod.com/hoey/photos/gaspar_family.jpg">*The Family of Louis Gaspar and Agnes Stark Gaspar
-<option value="http://thoey.tripod.com/hoey/photos/stroempl_stark_wedding.jpg">*John Stroempl and Theresa Stark Wedding - 1902
-<option value="http://thoey.tripod.com/hoey/blank.gif">*** ITALIAN ROOTS ***
-<option value="http://thoey.tripod.com/hoey/italy/campolieto.jpg">The town of Campolieto.
-<option value="http://thoey.tripod.com/hoey/italy/pasquale_ialenti.jpg">Pasquale Ialenti, date unknown.
-<option value="http://thoey.tripod.com/hoey/photos/ialenti.jpg">Anna and Philomena Ialenti.
-<option value="http://thoey.tripod.com/hoey/photos/margaret_strazza.jpg">Margaret Strazza, 1910
-<option value="http://thoey.tripod.com/hoey/photos/strazza_house.jpg">Strazza home on Mt. Washington
-<option value="http://thoey.tripod.com/hoey/photos/yalenty_wedding.jpg">Phillip and Margaret Ialenti (L) on their wedding day, 1910
-<option value="http://thoey.tripod.com/hoey/photos/yalenty_farm.jpg">Phillip Ialenti's Farm
-<option value="http://thoey.tripod.com/hoey/photos/yalenty_group.jpg">Ialenti Family, 1918
-<option value="http://thoey.tripod.com/hoey/photos/yalenty_brothers.jpg">(T-B) Vince, John, Al and Phil Yalenty.
-<option value="http://thoey.tripod.com/hoey/photos/yalenty_in_uniform.jpg">Margaret (Strazza) Yalenty with sons John and Phil, 1946
-<option value="http://thoey.tripod.com/hoey/photos/yalenty_reunion.jpg">Yalenty Family Reunion, ca. 1980
-<option value="http://thoey.tripod.com/hoey/blank.gif">*** GERMAN ROOTS ***
-<option value="http://thoey.tripod.com/hoey/photos/brickner.jpg">The Brickner home in Germany
-<option value="http://thoey.tripod.com/hoey/photos/donet_family.jpg">Gottholdt and Rosine Donet with grandkids, ca. 1920
-<option value="http://thoey.tripod.com/hoey/photos/leonard_weiss.jpg">Leonard Weiss in uniform
-<option value="http://thoey.tripod.com/hoey/photos/zoerb1.jpg">The Zoerb Children, ca. 1924
-<option value="http://thoey.tripod.com/hoey/photos/donet_tom.jpg">Alfred Donet (Top row, 2nd from left) with the crew of his B-17.  He was a gunner.
-</select>
-</td>
-</tr>
-<tr>
-<td align=center bgcolor="#C0C0C0">
-<input type=button onClick="first();" value="|<<" title="Beginning">
-<input type=button onClick="previous();" value="<<" title="Previous">
-<input type=button name="slidebutton" onClick="ap(this.value);" value="Start" title="AutoPlay">
-<input type=button onClick="next();" value=">>" title="Next">
-<input type=button onClick="last();" value=">>|" title="End">
-</td>
-</tr>
-</table>
-</form>
-</center>
-<p><center>
-<font face="Times, Times New Roman" size="-2">Free JavaScripts provided<br>
-by <a href="http://javascriptsource.com"><font face="Times, Times New Roman" size="-2">The JavaScript Source</a></font>
-</center><p>
-<table border="0" cellspacing="0" cellpadding="0">
-<table border="0" cellspacing="0" cellpadding="5">
-<tr>
-<!-- Script Size:  3.24 KB --></td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-							<tr>
-								<td width=100%><img alt="" width=100% height="6" src="/imagelib/sitebuilder/layout/spacer.gif"></td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-</table>
-<table border="0" cellspacing="0" cellpadding="0">
-	<tr>
-		<td background="/imagelib/sitebuilder/layout/bluecorner_leftback.gif" width="49"><img alt="" width="49" height="15" src="/imagelib/sitebuilder/layout/spacer.gif"></td>
-		<td width=100%>
-			<table width=100% border="0" cellspacing="0" cellpadding="5">
-				<tr>
-					<td width=100% bgcolor="#333399"></td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-</table>
-</BODY>
+    <main>
+        <h2>Photo Album</h2>
+        <div class="gallery-container">
+            <img id="main-slide" src="photos/tom_and_lisa.jpg" class="gallery-image" alt="Gallery Photo">
+            <select id="slide-select" onchange="updateSlide()">
+                <option value="photos/tom_and_lisa.jpg">Me and my wife, Lisa - 1990</option>
+                <option value="photos/china_1.jpg">James Hoey in China, 1901</option>
+                <option value="photos/hoey_family_2.jpg">Rose (Quinn) Hoey and Family, ca. 1905</option>
+                <option value="photos/james_police.jpg">James in his police uniform, ca 1906</option>
+                <option value="photos/mary_donahue.jpg">Mary Donahue, ca. 1910</option>
+                <option value="photos/james_and_mary.jpg">James and Mary Hoey, ca. 1915</option>
+                <option value="photos/hoey_family_3.jpg">My father with his sisters, 1934</option>
+                <option value="photos/donahue_family.jpg">Mary (L) and Ann Donahue with their parents, ca. 1938</option>
+                <option value="photos/county_police.jpg">James being sworn in as Superintendent of County Police</option>
+                <option value="photos/james_hoey_1.jpg">James Hoey, date unknown</option>
+                <option value="photos/hoey_family_1.jpg">Hoey Family, ca. 1938</option>
+                <option value="photos/medal.jpg">China Relief Expedition Medal</option>
+                <option value="photos/hoey_wedding.jpg">My mother and father on their wedding day, 1956</option>
+                <option value="photos/maka_1.jpg">Jewell Stark, 1907</option>
+                <option value="photos/louis_and_pauline.jpg">Louis and Pauline (Stark) Weet, late 1920's</option>
+                <option value="photos/maka6.jpg">Jewell Stark, 1930</option>
+                <option value="photos/maka_and_herbert_1.jpg">Herbert and Jewell Weet on their wedding day, 1931</option>
+                <option value="photos/weet_children.jpg">My mother (front) with her brothers and sisters, 1941</option>
+                <option value="photos/weet_house.jpg">Herbert and Jewell Weet home in Brookline</option>
+                <option value="photos/kund_family.jpg">The Family of Wendelin Kund and Agnes Gedeon Kund, 1920</option>
+                <option value="photos/orient2.jpg">John and Catherine (Weet) Orient on their wedding day</option>
+                <option value="photos/pickle_plant.jpg">The Weet Pickle Company on McNeilly Road</option>
+                <option value="photos/orient.jpg">The Orient Children, 1937</option>
+                <option value="photos/reunion.jpg">Weet/Orient Family Reunion, 1981</option>
+                <option value="photos/gedeon_family.jpg">John and Mary (Stark) Gedeon with their sons, ca. 1900</option>
+                <option value="photos/eiben_family.jpg">One branch of the Eiben Family, ca. 1912</option>
+                <option value="photos/kramer.jpg">The Kramer Family, ca. 1910</option>
+                <option value="photos/gaspar_family.jpg">The Family of Louis Gaspar and Agnes Stark Gaspar</option>
+                <option value="photos/stroempl_stark_wedding.jpg">John Stroempl and Theresa Stark Wedding - 1902</option>
+                <option value="italy/campolieto.jpg">The town of Campolieto</option>
+                <option value="italy/pasquale_ialenti.jpg">Pasquale Ialenti</option>
+                <option value="photos/ialenti.jpg">Anna and Philomena Ialenti</option>
+                <option value="photos/margaret_strazza.jpg">Margaret Strazza, 1910</option>
+                <option value="photos/strazza_house.jpg">Strazza home on Mt. Washington</option>
+                <option value="photos/yalenty_wedding.jpg">Phillip and Margaret Ialenti on their wedding day, 1910</option>
+                <option value="photos/yalenty_farm.jpg">Phillip Ialenti's Farm</option>
+                <option value="photos/yalenty_group.jpg">Ialenti Family, 1918</option>
+                <option value="photos/yalenty_brothers.jpg">Vince, John, Al and Phil Yalenty</option>
+                <option value="photos/yalenty_in_uniform.jpg">Margaret (Strazza) Yalenty with sons John and Phil, 1946</option>
+                <option value="photos/yalenty_reunion.jpg">Yalenty Family Reunion, ca. 1980</option>
+                <option value="photos/brickner.jpg">The Brickner home in Germany</option>
+                <option value="photos/donet_family.jpg">Gottholdt and Rosine Donet with grandkids, ca. 1920</option>
+                <option value="photos/leonard_weiss.jpg">Leonard Weiss in uniform</option>
+                <option value="photos/zoerb1.jpg">The Zoerb Children, ca. 1924</option>
+                <option value="photos/donet_tom.jpg">Alfred Donet with the crew of his B-17</option>
+            </select>
+            <div class="controls">
+                <button onclick="changeSlide(-1)">Previous</button>
+                <button id="play-btn" onclick="toggleAutoPlay()">Start</button>
+                <button onclick="changeSlide(1)">Next</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Hoey Family Genealogy Site</p>
+    </footer>
+
+    <script>
+        const select = document.getElementById('slide-select');
+        const img = document.getElementById('main-slide');
+        let autoPlayInterval = null;
+
+        function updateSlide() { img.src = select.value; }
+        function changeSlide(direction) {
+            select.selectedIndex = (select.selectedIndex + direction + select.options.length) % select.options.length;
+            updateSlide();
+        }
+        function toggleAutoPlay() {
+            const btn = document.getElementById('play-btn');
+            if (autoPlayInterval) { clearInterval(autoPlayInterval); autoPlayInterval = null; btn.textContent = "Start"; } 
+            else { autoPlayInterval = setInterval(() => changeSlide(1), 3000); btn.textContent = "Stop"; }
+        }
+    </script>
+</body>
 </html>
