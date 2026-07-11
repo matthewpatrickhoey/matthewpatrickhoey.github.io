@@ -1,16 +1,18 @@
 /* legacy.css */
 body {
-    background-color: #FFFFFF;
-    background-image: url('paper2.gif');
+    background-color: #EAF0EE;
     background-attachment: fixed; /* This keeps the background fixed */
     font-family: "Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
 }
+    nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+    nav a { text-decoration: none; color: #355E3B; font-weight: bold; white-space: nowrap; }
+    nav a:hover { text-decoration: underline; color: #000; }
 
 header {
     text-align: center;
-    background: #FFFFFF; /* Ensures readability over the background image */
+    background: #EAF0EE; /* Ensures readability over the background image */
     padding: 10px 0;
     position: sticky; /* Keeps the menu at the top when scrolling */
     top: 0;
