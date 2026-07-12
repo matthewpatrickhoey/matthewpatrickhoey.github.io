@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* legacy.css */
 body {
     background-color: #EAF0EE;
@@ -26,3 +27,36 @@ article {
     margin: 20px auto;
     padding: 20px;
 }
+=======
+/* legacy.css */
+body {
+    background-color: #EAF0EE;
+    background-attachment: fixed; /* This keeps the background fixed */
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: #EAF0EE; /* Ensures readability over the background image */
+    padding: 10px 0;
+    position: sticky; /* Keeps the menu at the top when scrolling */
+    top: 0;
+    border-bottom: 3px solid #000;
+}
+
+nav {
+    ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+    a { text-decoration: none; color: #355E3B; font-weight: bold; white-space: nowrap; }
+    a:hover { text-decoration: underline; color: #000; }
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+>>>>>>> Stashed changes
